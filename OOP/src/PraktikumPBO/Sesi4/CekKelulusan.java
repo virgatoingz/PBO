@@ -18,6 +18,6 @@ public class CekKelulusan {
         } else{
             System.out.println("Maaf " + nama + ", Anda Gagal");
         }
-
+        
 }
 }
