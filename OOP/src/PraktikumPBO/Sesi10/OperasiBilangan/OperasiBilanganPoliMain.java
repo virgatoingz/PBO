@@ -18,6 +18,7 @@ abstract class OperasiBilangan {
         return a;
     }
 
+
     protected double get_B() {
         return b;
     }
