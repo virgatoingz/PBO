@@ -36,7 +36,7 @@ public class NilaiTester {
         Nilai n=new Nilai();
         n.setQuis(90);
         n.setUts(70);
-        n.setUas(150);
+        n.setUas(90);
         System.out.println("NA : "+ n.getNA());
     }
     

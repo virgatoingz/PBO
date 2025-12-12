@@ -57,26 +57,30 @@ class Waktu {
 // Kelas utama untuk menjalankan program
 public class WaktuTest {
     public static void main(String[] args) {
-        Waktu waktu1 = new Waktu(150); // Contoh: 150 menit sejak 00:00
-        
+        Waktu objek = new Waktu(150); // Contoh: 150 menit sejak 00:00
+        Waktu objek2 = new Waktu(90); // Contoh: 90 menit sejak 00:00        
         // Clear the screen
         System.out.print("\033[H\033[2J");
-        System.out.println("Jam Awal         : " + waktu1.getJam());
-        System.out.println("Menit Awal       : " + waktu1.getMenit());
-        System.out.println("Total Menit Awal : " + waktu1.getTotalMenit());
+        System.out.println("Jam Awal         : " + objek.getJam());
+        System.out.println("Menit Awal       : " + objek.getMenit());
+        System.out.println("Total Menit Awal : " + objek.getTotalMenit());
 
-        waktu1.setJam(2);
-        waktu1.setMenit(30);
+        objek.setJam(2);
+        objek.setMenit(30);
         System.out.println("\nSetelah Set Jam dan Menit:");
-        waktu1.tampilWaktu();
+        objek.tampilWaktu();
 
-        waktu1.tambahJam(1);
-        waktu1.tambahMenit(15);
+        objek.tambahJam(1);
+        objek.tambahMenit(15);
         System.out.println("\nSetelah Menambah Jam dan Menit:");
-        waktu1.tampilWaktu();
+        objek.tampilWaktu();
 
-        waktu1.tambahWaktu(2, 45);
+        objek.tambahWaktu(2, 45);
         System.out.println("\nSetelah Menambah Waktu (Jam dan Menit):");
-        waktu1.tampilWaktu();
+        objek.tampilWaktu();
+
+        System.out.println("\nJam Awal Objek 2         : " + objek2.getJam());
+        System.out.println("Menit Awal Objek 2       : " + objek2.getMenit());
+        System.out.println("Total Menit Awal Objek 2 : " + objek2.getTotalMenit());
     }
 }

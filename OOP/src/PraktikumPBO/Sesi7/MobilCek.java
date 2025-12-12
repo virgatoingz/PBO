@@ -3,11 +3,13 @@ class Mobil {
     public String merk;
     protected int tahunProduksi;
     private double harga;
+
     public Mobil(String merk, int tahunProduksi,double harga){
         this.merk = merk;
         this.tahunProduksi = tahunProduksi;
         this.harga = harga;
     }    
+    
     public double getHarga(){
         return harga;
     }
